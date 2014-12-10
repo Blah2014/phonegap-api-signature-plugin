@@ -1,0 +1,2 @@
+phonegap-api-signature-plugin
+=============================
