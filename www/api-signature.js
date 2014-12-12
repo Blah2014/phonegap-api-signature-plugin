@@ -1,7 +1,7 @@
 //  
-//  InMobiPlugin
+//  ApiSignaturePlugin
 //
-//  Created by Dmitriy Devayev on 10/8/14.
+//  Created by Dmitriy Devayev on 12/12/2014.
 //
 //
 
