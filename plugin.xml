@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.setlevel.apisignature" version="0.1.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="com.setlevel.apisignature" version="1.0.0">
     <name>ApiSignature</name>
-    <description>Phonegap/Cordova Api Signature plugin. This plugin provides an implementation of the SHA-256.</description>
+    <description>Phonegap/Cordova Api Signature plugin. This plugin provides an implementation of the (SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512).</description>
     <author>Dmitriy Devayev</author>
     <license>Apache 2.0 License</license>
-    <keywords>phonegap,cordova,api signature</keywords>
+    <keywords>phonegap,cordova,api signature, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512</keywords>
 
     <engines>
         <engine name="cordova" version=">=3.0" />

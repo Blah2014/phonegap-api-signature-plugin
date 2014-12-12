@@ -1,4 +1,3 @@
-//
 //  
 //  InMobiPlugin
 //
@@ -9,13 +8,13 @@
 var cordova = require('cordova');
 
 function ApiSignature() {
-	var self = this;
+    var self = this;
 
-	self.createApiSignature = function(str, callback) {
-		cordova.exec(function(signature){
-			callback(signature);
-		}, function(){}, "CDVApiSignature", "createApiSignature", [str]);
-	};
+    self.createApiSignature = function(str, hmac, callback) {
+        cordova.exec(function(signature) {
+            callback(signature);
+        }, function() {}, "CDVApiSignature", "createApiSignature", [str, hmac]);
+    };
 }
 
 module.exports = new ApiSignature();

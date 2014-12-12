@@ -12,6 +12,10 @@
 
 - (void)createApiSignature:(CDVInvokedUrlCommand*)command;
 
+- (NSString*) sha1:(NSString *)clear;
+- (NSString*) sha224:(NSString *)clear;
 - (NSString*) sha256:(NSString *)clear;
+- (NSString*) sha384:(NSString *)clear;
+- (NSString*) sha512:(NSString *)clear;
 
 @end

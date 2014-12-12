@@ -29,8 +29,8 @@
     </head>
     <body>
         <script>
-            function createApiSignature(str){
-                ApiSignature.createApiSignature(str, function(sig){
+            function createApiSignature(str, hmac){
+                ApiSignature.createApiSignature(str, hmac, function(sig){
                     alert('Signature: ' + sig)
                 });
             }
@@ -40,10 +40,19 @@
             <h1>Apache Cordova</h1>
             <div id="deviceready" class="blink">
                 <p class="event listening">Connecting to Device</p>
-                <br /><br />
+                <br />
                 <input id="sig" type="text" />
                 <br /><br />
-                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value);">Create Api Signature</p>
+                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value, 'sha-1');" style="display: block;">Create Api Signature (SHA-1)</p>
+                <br /><br />
+                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value, 'sha-224');" style="display: block;">Create Api Signature (SHA-224)</p>
+                <br /><br />
+                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value, 'sha-256');" style="display: block;">Create Api Signature (SHA-256)</p>
+                <br /><br />
+                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value, 'sha-384');" style="display: block;">Create Api Signature (SHA-384)</p>
+                <br /><br />
+                <p class="event received" onclick="createApiSignature(document.getElementById('sig').value, 'sha-512');" style="display: block;">Create Api Signature (SHA-512)</p>
+                <br /><br />
             </div>
         </div>
         <script type="text/javascript" src="cordova.js"></script>
