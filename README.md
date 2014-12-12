@@ -3,7 +3,7 @@ phonegap-api-signature-plugin
 
 This plugin provides an implementation of the (SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512)
 
-<h1>Important</h1>
+<h2>Important</h2>
 Android do not support SHA-224
 
 <h2>Supported platforms</h2>
