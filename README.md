@@ -1,7 +1,10 @@
 phonegap-api-signature-plugin
 =============================
 
-Implementation of the SHA-256
+This plugin provides an implementation of the (SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512)
+
+<h5>Important</h5>
+Android do not support SHA-224
 
 <h2>Supported platforms</h2>
 <ul>
@@ -32,8 +35,37 @@ plugman --platform ios --project ./platforms/ios --plugin https://github.com/Bla
 
 ## Usage
 ```
+// SHA-1
 <script>
-    ApiSignature.createApiSignature(str, function(sig){
+    ApiSignature.createApiSignature(str, 'sha-1', function(sig){
+      alert('Signature: ' + sig)
+    });
+</script>
+
+// SHA-224
+<script>
+    ApiSignature.createApiSignature(str, 'sha-224', function(sig){
+      alert('Signature: ' + sig)
+    });
+</script>
+
+// SHA-256
+<script>
+    ApiSignature.createApiSignature(str, 'sha-256', function(sig){
+      alert('Signature: ' + sig)
+    });
+</script>
+
+// SHA-384
+<script>
+    ApiSignature.createApiSignature(str, 'sha-384', function(sig){
+      alert('Signature: ' + sig)
+    });
+</script>
+
+// SHA-512
+<script>
+    ApiSignature.createApiSignature(str, 'sha-512', function(sig){
       alert('Signature: ' + sig)
     });
 </script>
