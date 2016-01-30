@@ -5,6 +5,10 @@ phonegap-api-signature-plugin
   <img src="https://raw.githubusercontent.com/Blah2014/phonegap-inmobi-plugin/gh-pages/images/BuymeaCoffee.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" />
 </a>
 
+<a href="http://traderhub.info" target="_blank">
+  <img src="http://traderhub.info/images/AD.jpg" border="0" name="submit" alt="TraderHub - daily stock picks, market signals, stock picking service" />
+</a>
+
 This plugin provides an implementation of the (SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512)
 
 <h2>Important</h2>
